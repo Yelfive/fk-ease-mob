@@ -1,0 +1,11 @@
+{
+  "name": "fk/ease-mob",
+  "autoload": {
+    "psr-4": {
+      "fk\\ease\\mob": "./src"
+    }
+  },
+  "require": {
+    "curl/curl": ""
+  }
+}
