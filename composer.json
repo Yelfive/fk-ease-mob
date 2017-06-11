@@ -7,7 +7,7 @@
   },
   "minimum-stability": "dev",
   "require": {
-    "curl/curl": "",
+    "curl/curl": "*",
     "php": ">=7"
   }
 }
