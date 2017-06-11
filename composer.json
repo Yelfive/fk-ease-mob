@@ -2,10 +2,12 @@
   "name": "fk/ease-mob",
   "autoload": {
     "psr-4": {
-      "fk\\ease\\mob": "./src"
+      "fk\\ease\\mob\\": "./src"
     }
   },
+  "minimum-stability": "dev",
   "require": {
-    "curl/curl": ""
+    "curl/curl": "",
+    "php": ">=7"
   }
 }
