@@ -21,6 +21,7 @@ namespace fk\ease\mob;
  * @method array userModifyNickname(string $username, string $nickname)
  * @method array addFriend(string $myUsername, string $friendUsername)
  * @method array removeFriend(string $myUsername, string $friendUsername)
+ * @method array logout(string $username)
  *
  */
 class IM extends IMBase
@@ -65,6 +66,14 @@ class IM extends IMBase
         return [
             'delete',
             "users/$myUsername/contacts/users/$friendUsername"
+        ];
+    }
+
+    protected function prepareLogout(string $username)
+    {
+        return [
+            'get',
+            "/users/{$username}/disconnect"
         ];
     }
 
