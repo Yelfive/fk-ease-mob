@@ -22,6 +22,7 @@ namespace fk\ease\mob;
  * @method array addFriend(string $myUsername, string $friendUsername)
  * @method array removeFriend(string $myUsername, string $friendUsername)
  * @method array logout(string $username)
+ * @method array userOnlineCheck(string $username)
  *
  */
 class IM extends IMBase
@@ -74,6 +75,14 @@ class IM extends IMBase
         return [
             'get',
             "users/{$username}/disconnect"
+        ];
+    }
+
+    protected function prepareUserOnlineCheck($username)
+    {
+        return [
+            'get',
+            "users/{$username}/status"
         ];
     }
 
