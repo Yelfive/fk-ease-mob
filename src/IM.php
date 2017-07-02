@@ -73,7 +73,7 @@ class IM extends IMBase
     {
         return [
             'get',
-            "/users/{$username}/disconnect"
+            "users/{$username}/disconnect"
         ];
     }
 
